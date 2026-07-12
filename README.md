@@ -101,3 +101,29 @@ No manual interaction is required after the shopping mission begins.
 - SQLite
 
 ---
+RiftMart/
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   │   ├── AsciiLogo.jsx
+│   │   │   ├── BootScreen.jsx
+│   │   │   ├── Conversation.jsx
+│   │   │   ├── Terminal.jsx
+│   │   │   └── Shop/
+│   │   │       └── ShopExe.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
+│
+├── payment/
+│
+├── LICENSE
+└── README.md
