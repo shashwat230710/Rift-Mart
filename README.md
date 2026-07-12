@@ -13,7 +13,7 @@
 
 ### The future of shopping is autonomous.
 
-**RiftMart** is an AI-native e-commerce experience built for autonomous agents, not human shoppers —
+**RiftMart** is an AI-native e-commerce experience built for autonomous agents, not human shoppers -
 wrapped in a retro Y2K / Windows-XP-era terminal that makes the AI's shopping mission feel like
 you're hacking into a futuristic OS.
 
@@ -35,10 +35,10 @@ you're hacking into a futuristic OS.
 
 ## 📖 Overview
 
-Traditional e-commerce is built for humans clicking through pages. **RiftMart flips that** — it's a
+Traditional e-commerce is built for humans clicking through pages. **RiftMart flips that** - it's a
 shopping platform designed for an AI agent to operate end-to-end. You give it two things, a
 **product** and a **budget**, and the agent takes it from there: searching, comparing prices,
-reading reviews, picking a winner, checking out, and paying — while you watch the entire mission
+reading reviews, picking a winner, checking out, and paying - while you watch the entire mission
 play out inside a terminal that looks like it booted off a 2004 BIOS chip.
 
 No dashboards. No product grids. Just a black screen, a blinking cursor, and an AI doing your
@@ -48,22 +48,22 @@ shopping for you.
 
 ## ✨ Features
 
-- 🤖 **Autonomous AI shopping agent** — takes a product + budget and runs the whole mission unattended
-- 🖥️ **AgentOS Terminal** — a fully custom, from-scratch terminal UI (no `cmd.exe`/xterm dependency)
-- 💾 **BIOS-style boot sequence** — memory check, kernel load, driver init, animated progress bar
-- 💬 **Conversational AI intake** — natural back-and-forth to capture what to buy and how much to spend
-- 🔍 **Simulated multi-source search** — Flipkart / Amazon comparison, price comparison, review checks
-- 🛒 **Shop.exe** — the actual product catalog, search, and checkout flow the agent drives
-- 💰 **AI-Pay Protocol** — a mock payment rail with rule-based approval and transaction records
-- 🧾 **ASCII receipt** — a printable, copyable transaction summary at the end of every mission
-- 🎨 **Y2K / retro-CRT aesthetic** — scanlines, CRT flicker, glow text, and a fully custom color system
-- ⚡ **Modular architecture** — terminal, shop, agent, and payment are independent services with clean interfaces between them
+- 🤖 **Autonomous AI shopping agent** - takes a product + budget and runs the whole mission unattended
+- 🖥️ **AgentOS Terminal** - a fully custom, from-scratch terminal UI (no `cmd.exe`/xterm dependency)
+- 💾 **BIOS-style boot sequence** - memory check, kernel load, driver init, animated progress bar
+- 💬 **Conversational AI intake** - natural back-and-forth to capture what to buy and how much to spend
+- 🔍 **Simulated multi-source search** - Flipkart / Amazon comparison, price comparison, review checks
+- 🛒 **Shop.exe** - the actual product catalog, search, and checkout flow the agent drives
+- 💰 **AI-Pay Protocol** - a mock payment rail with rule-based approval and transaction records
+- 🧾 **ASCII receipt** - a printable, copyable transaction summary at the end of every mission
+- 🎨 **Y2K / retro-CRT aesthetic** - scanlines, CRT flicker, glow text, and a fully custom color system
+- ⚡ **Modular architecture** - terminal, shop, agent, and payment are independent services with clean interfaces between them
 
 ---
 
 ## 🧭 How It Works
 
-The user only ever provides **two inputs** — everything else is autonomous.
+The user only ever provides **two inputs** - everything else is autonomous.
 
 ```mermaid
 flowchart TD
@@ -81,16 +81,16 @@ flowchart TD
 
 | # | Phase | What happens |
 |---|-------|--------------|
-| 1 | **Boot Screen** | RIFT BIOS boots up — memory check, kernel + driver loading, progress bar to 100% |
+| 1 | **Boot Screen** | RIFT BIOS boots up - memory check, kernel + driver loading, progress bar to 100% |
 | 2 | **ASCII Logo** | The RIFT MART wordmark glitches in and settles into a steady CRT glow |
-| 3 | **Terminal** | A live `RIFT>` command line — real keyboard input, command history, built-in commands (`help`, `buy`, `clear`, `about`...) |
+| 3 | **Terminal** | A live `RIFT>` command line - real keyboard input, command history, built-in commands (`help`, `buy`, `clear`, `about`...) |
 | 4 | **AI Conversation** | The agent asks what to buy and what your budget is, then runs a simulated multi-source search |
 | 5 | **Shop.exe Launch** | Control hands off to the shopping engine, which searches, compares, and evaluates products |
 | 6 | **Purchase Complete** | The agent reports back the product it picked, the price, and the seller |
-| 7 | **Receipt** | An ASCII transaction receipt — savable, copyable |
+| 7 | **Receipt** | An ASCII transaction receipt - savable, copyable |
 | 8 | **Shutdown** | Session teardown, memory cleared, power off |
 
-No manual clicking required after the mission starts — the agent drives the entire flow from
+No manual clicking required after the mission starts - the agent drives the entire flow from
 search to payment.
 
 ---
@@ -139,10 +139,10 @@ tested, and deployed independently.
 └─────────────────────────┘
 ```
 
-- **Terminal owns the experience** — everything a judge/user sees first: boot, logo, command line, conversation, receipt
-- **Agent owns the decisions** — what to search for, what counts as "best," when to check out
-- **Shop.exe owns the catalog** — product data, search, filtering, the checkout surface
-- **AI-Pay owns money** — budget validation, approval/rejection, transaction IDs
+- **Terminal owns the experience** - everything a judge/user sees first: boot, logo, command line, conversation, receipt
+- **Agent owns the decisions** - what to search for, what counts as "best," when to check out
+- **Shop.exe owns the catalog** - product data, search, filtering, the checkout surface
+- **AI-Pay owns money** - budget validation, approval/rejection, transaction IDs
 
 ---
 
@@ -162,17 +162,17 @@ tested, and deployed independently.
 
 ```
 Rift-Mart/
-├── frontend/                  # AgentOS Terminal — the experience layer
+├── frontend/                  # AgentOS Terminal - the experience layer
 │   ├── public/
 │   ├── src/
 │   │   ├── assets/
 │   │   ├── components/
-│   │   │   ├── BootScreen.jsx     # Phase 1 — BIOS boot sequence
-│   │   │   ├── AsciiLogo.jsx      # Phase 2 — logo reveal
-│   │   │   ├── Terminal.jsx       # Phase 3 — command line
-│   │   │   ├── Conversation.jsx   # Phase 4 — AI intake + search animation
+│   │   │   ├── BootScreen.jsx     # Phase 1 - BIOS boot sequence
+│   │   │   ├── AsciiLogo.jsx      # Phase 2 - logo reveal
+│   │   │   ├── Terminal.jsx       # Phase 3 - command line
+│   │   │   ├── Conversation.jsx   # Phase 4 - AI intake + search animation
 │   │   │   └── Shop/
-│   │   │       └── ShopExe.jsx    # Phase 5+ — shopping UI
+│   │   │       └── ShopExe.jsx    # Phase 5+ - shopping UI
 │   │   ├── App.jsx                # Phase orchestrator / state machine
 │   │   ├── main.jsx
 │   │   └── index.css
@@ -180,9 +180,9 @@ Rift-Mart/
 │   ├── package.json
 │   └── vite.config.js
 │
-├── backend/                   # FastAPI service — product + search API
+├── backend/                   # FastAPI service - product + search API
 ├── agent/                     # Autonomous shopping agent logic
-├── payment/                   # AI-Pay Protocol — mock payment rail
+├── payment/                   # AI-Pay Protocol - mock payment rail
 │
 ├── LICENSE
 └── README.md
@@ -233,7 +233,7 @@ pip install -r requirements.txt --break-system-packages
 python agent.py
 ```
 
-The agent is designed to run locally alongside the frontend/backend — it isn't meant to be hosted.
+The agent is designed to run locally alongside the frontend/backend - it isn't meant to be hosted.
 
 ### 4. Payment (AI-Pay Protocol)
 
@@ -252,10 +252,10 @@ Once all four are running, open the frontend URL and start a mission from the te
 
 1. Wait for (or skip past) the BIOS boot sequence and logo
 2. At the `RIFT>` prompt, type `help` to see available commands
-3. Type `buy <product name>` — e.g. `buy gaming mouse`
+3. Type `buy <product name>` - e.g. `buy gaming mouse`
 4. Answer the AI's budget question
 5. Watch the agent search, compare, and check out automatically
-6. Read your ASCII receipt at the end — `MISSION COMPLETE`
+6. Read your ASCII receipt at the end - `MISSION COMPLETE`
 
 ---
 
@@ -268,7 +268,7 @@ RiftMart deliberately avoids looking like a normal website. The whole interface 
 - Glitch-in text reveals and blinking block cursors instead of fades
 - A constrained retro color palette (green, amber, white, error red, and a touch of blue)
 
-The goal: **don't build a fake operating system — build the illusion of one.**
+The goal: **don't build a fake operating system - build the illusion of one.**
 
 ---
 
@@ -300,13 +300,13 @@ RiftMart was built as a hackathon project across five independent modules:
 
 ## 📜 License
 
-This project is licensed under the [MIT License](./LICENSE) — free to use for educational,
+This project is licensed under the [MIT License](./LICENSE) - free to use for educational,
 research, and hackathon purposes.
 
 ---
 
 <div align="center">
 
-**RiftMart** — because the future of shopping doesn't need a mouse.
+**RiftMart** - because the future of shopping doesn't need a mouse.
 
 </div>
