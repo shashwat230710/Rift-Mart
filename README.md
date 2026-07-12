@@ -67,7 +67,7 @@ The user only ever provides **two inputs** - everything else is autonomous.
 
 ```mermaid
 flowchart TD
-    U["🧑 User\n(product + budget)"] --> T[AgentOS Terminal]
+    U["User\n(product + budget)"] --> T[AgentOS Terminal]
     T --> C[AI Conversation]
     C --> A[Shopping Agent]
     A --> S["Shop.exe\n(search · compare · evaluate)"]
@@ -100,6 +100,7 @@ search to payment.
 RiftMart is divided into four independent modules connected through shared
 contracts (JSON schemas + event names). Each module can be developed,
 tested, and deployed independently.
+
 
 ```text
 ┌─────────────────────────┐
