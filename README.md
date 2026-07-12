@@ -286,14 +286,15 @@ The goal: **don't build a fake operating system — build the illusion of one.**
 
 ## 👥 Team
 
-RiftMart was built as a hackathon project across four independent modules:
+RiftMart was built as a hackathon project across five independent modules:
 
-| Module | Owner | Responsibilities |
-|--------|-------|------------------|
-| 🖥️ RiftOS Terminal | **[Mobashshir](https://github.com/Mobasheera)** | React frontend, `App.jsx`, `Terminal.jsx`, `Conversation.jsx`, boot sequence, ASCII logo, animations, Y2K theme & styling |
-| 🛒 Shop.exe | **[Shashwat](https://github.com/shashwat230710)** | Product catalog, search, checkout flow, shopping agent automation, Vercel deployment |
-| 💰 AI-Pay Protocol | **[Akshata](https://github.com/akshatabasankar)** | *(Initial Implementation)* of Payment API, payment rules, mock transactions |
-| 🔧 Integration & Infrastructure | **[Avnish](https://github.com/calsify)** & **[Shashwat](https://github.com/shashwat230710)** | Module integration, LLM integration, backend improvements, infrastructure, testing, documentation, polish |
+| Module | Team Member | GitHub | LinkedIn | Responsibilities |
+|--------|-------------|--------|----------|------------------|
+| 🖥️ RiftOS Terminal | **Mobashshir** | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Mobasheera) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/mobashshir-ahsan/) | React frontend, `App.jsx`, `Terminal.jsx`, `Conversation.jsx`, boot sequence, ASCII logo, animations, Y2K theme & styling |
+| 🛒 Shop.exe | **Shashwat** | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/shashwat230710) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/shashwat-shukla23/) | Product catalog, search, checkout flow, shopping agent automation |
+| 💳 AI-Pay Protocol | **Akshata** | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/akshatabasankar) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/akshata-basankar/) | Initial implementation of Payment API, payment rules & mock transactions |
+| 🧠 AI & Infrastructure | **Avnish** | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/calsify) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/avanish-mishra-0ff1c1al/) | LLM integration, backend improvements, module integration, testing, documentation & polish |
+| ☁️ Deployment | **Shashwat** | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/shashwat230710) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/shashwat-shukla23/) | Vercel deployment, production hosting and release setup |
 
 ---
 
