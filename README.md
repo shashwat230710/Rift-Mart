@@ -127,3 +127,46 @@ RiftMart/
 │
 ├── LICENSE
 └── README.md
+
+## 🎯 Vision
+
+Traditional e-commerce platforms are designed for humans.
+
+**RiftMart reimagines online shopping for AI agents**, where intelligent software can autonomously complete the entire shopping workflow while humans simply specify what they need.
+
+---
+
+## 🖥️ Theme
+
+RiftMart embraces the nostalgic aesthetic of the **2004–2006 Windows XP era**, combining:
+
+- CRT Terminal
+- DOS-style Interface
+- Windows XP Dialogs
+- Internet Explorer Inspired Windows
+- Retro Sound Effects
+- Y2K Animations
+
+---
+
+## 🔮 Future Improvements
+
+- Multi-store shopping
+- Live browser automation
+- AI negotiation engine
+- Delivery tracking
+- Voice-controlled shopping
+- Multi-agent collaboration
+- Real-time price monitoring
+
+---
+
+## 👥 Team
+
+Built as a hackathon project demonstrating the future of **AI-powered autonomous commerce**.
+
+---
+
+## 📜 License
+
+This project is intended for educational, research, and hackathon purposes.
