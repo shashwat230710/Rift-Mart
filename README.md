@@ -13,8 +13,6 @@
 
 ### The future of shopping is autonomous.
 
-</div>
-
 **RiftMart** is an AI-native e-commerce experience built for autonomous agents, not human shoppers —
 wrapped in a retro Y2K / Windows-XP-era terminal that makes the AI's shopping mission feel like
 you're hacking into a futuristic OS.
