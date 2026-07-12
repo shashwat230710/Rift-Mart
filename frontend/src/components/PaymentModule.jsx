@@ -50,11 +50,12 @@ export default function PaymentModule({ session, onComplete }) {
         addLog('[OK] SECURITY CLEARANCE GRANTED.', COLORS.green);
         
         await new Promise(r => setTimeout(r, 1500));
-        addLog('Connecting to payment gateway (localhost:5000)...');
+        const PAYMENT_API_BASE = import.meta.env.VITE_PAYMENT_API_URL || 'http://localhost:5000';
+        addLog(`Connecting to payment gateway (${PAYMENT_API_BASE})...`);
         
         // Ensure balance is sufficient (Optional demo hack: add funds first)
         try {
-          await fetch('http://localhost:5000/wallet/add', {
+          await fetch(`${PAYMENT_API_BASE}/wallet/add`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ amount: amount + 100 })
@@ -63,7 +64,7 @@ export default function PaymentModule({ session, onComplete }) {
           // ignore error if it fails
         }
         
-        const response = await fetch('http://localhost:5000/payment', {
+        const response = await fetch(`${PAYMENT_API_BASE}/payment`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
