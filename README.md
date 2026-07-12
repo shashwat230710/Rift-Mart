@@ -1,12 +1,12 @@
 <div align="center">
 
 ```
-   ██████╗ ██╗███████╗████████╗     ███╗   ███╗ █████╗ ██████╗ ████████╗
-   ██╔══██╗██║██╔════╝╚══██╔══╝     ████╗ ████║██╔══██╗██╔══██╗╚══██╔══╝
-   ██████╔╝██║█████╗     ██║        ██╔████╔██║███████║██████╔╝   ██║
-   ██╔══██╗██║██╔══╝     ██║        ██║╚██╔╝██║██╔══██║██╔══██╗   ██║
-   ██║  ██║██║██║        ██║        ██║ ╚═╝ ██║██║  ██║██║  ██║   ██║
-   ╚═╝  ╚═╝╚═╝╚═╝        ╚═╝        ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝
+   ██████╗  ██╗ ███████╗ ████████╗     ███╗   ███╗ █████╗ ██████╗ ████████╗
+   ██╔══██╗ ██║ ██╔════╝ ╚══██╔══╝     ████╗ ████║██╔══██╗██╔══██╗╚══██╔══╝
+   ██████╔╝ ██║ █████╗      ██║        ██╔████╔██║███████║██████╔╝   ██║   
+   ██╔══██╗ ██║ ██╔══╝      ██║        ██║╚██╔╝██║██╔══██║██╔══██╗   ██║   
+   ██║  ██║ ██║ ██║         ██║        ██║ ╚═╝ ██║██║  ██║██║  ██║   ██║   
+   ╚═╝  ╚═╝ ╚═╝ ╚═╝         ╚═╝        ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   
 ```
 
 ### The future of shopping is autonomous.
@@ -95,16 +95,46 @@ search to payment.
 
 ## 🏗️ Architecture
 
-RiftMart is split into four independent modules connected by a small set of shared contracts
-(JSON schemas + event names), so each piece can be built and tested in isolation:
+RiftMart is divided into four independent modules connected through shared
+contracts (JSON schemas + event names). Each module can be developed,
+tested, and deployed independently.
 
-```
-┌────────────────────┐     ┌────────────────┐     ┌──────────────────┐     ┌────────────────────┐
-│   AgentOS Terminal  │ --> │  Shopping Agent │ --> │     Shop.exe      │ --> │   AI-Pay Protocol   │
-│  (frontend/         │     │  (agent/)       │     │  (frontend/Shop,  │     │   (payment/)        │
-│   the experience)   │     │  automation +   │     │   backend/)       │     │   payment rules +   │
-│                      │     │  decision logic │     │  catalog + search │     │   mock transactions │
-└────────────────────┘     └────────────────┘     └──────────────────┘     └────────────────────┘
+```text
+┌─────────────────────────┐
+│     AgentOS Terminal    │
+│     (frontend/)         │
+│                         │
+│ • User interface        │
+│ • Terminal experience   │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│    Shopping Agent       │
+│      (agent/)           │
+│                         │
+│ • Automation            │
+│ • Decision logic        │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│       Shop.exe          │
+│ (frontend/shop +        │
+│      backend/)          │
+│                         │
+│ • Product catalog       │
+│ • Search engine         │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│    AI-Pay Protocol      │
+│      (payment/)         │
+│                         │
+│ • Payment rules         │
+│ • Mock transactions     │
+└─────────────────────────┘
 ```
 
 - **Terminal owns the experience** — everything a judge/user sees first: boot, logo, command line, conversation, receipt
