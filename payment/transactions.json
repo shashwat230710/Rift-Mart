@@ -1,0 +1,124 @@
+{
+  "transactions": [
+    {
+      "transactionId": "RIFT-20260712-7125",
+      "productId": "2",
+      "productName": "mouse - Pro Edition - Pro Edition",
+      "amount": 815.8177333914198,
+      "agentId": "TASK-10837",
+      "balanceAfter": 11015.81773339142,
+      "timestamp": "2026-07-12 08:09:23",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-1752",
+      "productId": "2",
+      "productName": "mouse - Pro Edition - Pro Edition",
+      "amount": 815.8177333914198,
+      "agentId": "TASK-10837",
+      "balanceAfter": 10200.0,
+      "timestamp": "2026-07-12 08:09:23",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-0967",
+      "productId": "5",
+      "productName": "Retro Mechanical Keyboard",
+      "amount": 150.0,
+      "agentId": "TASK-13369",
+      "balanceAfter": 10550.0,
+      "timestamp": "2026-07-12 08:18:54",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-5363",
+      "productId": "5",
+      "productName": "Retro Mechanical Keyboard",
+      "amount": 150.0,
+      "agentId": "TASK-13369",
+      "balanceAfter": 10400.0,
+      "timestamp": "2026-07-12 08:18:54",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-9904",
+      "productId": "2",
+      "productName": "mouse - Pro Edition",
+      "amount": 806.5997883208227,
+      "agentId": "TASK-80790",
+      "balanceAfter": 11406.599788320822,
+      "timestamp": "2026-07-12 08:21:28",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-9254",
+      "productId": "2",
+      "productName": "mouse - Pro Edition",
+      "amount": 806.5997883208227,
+      "agentId": "TASK-80790",
+      "balanceAfter": 10600.0,
+      "timestamp": "2026-07-12 08:21:29",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-4365",
+      "productId": "5",
+      "productName": "Retro Mechanical Keyboard",
+      "amount": 150.0,
+      "agentId": "TASK-20237",
+      "balanceAfter": 10950.0,
+      "timestamp": "2026-07-12 08:22:49",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-4838",
+      "productId": "5",
+      "productName": "Retro Mechanical Keyboard",
+      "amount": 150.0,
+      "agentId": "TASK-20237",
+      "balanceAfter": 10800.0,
+      "timestamp": "2026-07-12 08:22:49",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-0139",
+      "productId": "5",
+      "productName": "Retro Mechanical Keyboard",
+      "amount": 150.0,
+      "agentId": "TASK-87361",
+      "balanceAfter": 11150.0,
+      "timestamp": "2026-07-12 08:26:12",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-0726",
+      "productId": "5",
+      "productName": "Retro Mechanical Keyboard",
+      "amount": 150.0,
+      "agentId": "TASK-87361",
+      "balanceAfter": 11000.0,
+      "timestamp": "2026-07-12 08:26:12",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-2029",
+      "productId": "3",
+      "productName": "Computer Mouse - Premium Ultra",
+      "amount": 118.5,
+      "agentId": "TASK-94723",
+      "balanceAfter": 11318.5,
+      "timestamp": "2026-07-12 08:27:21",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-1104",
+      "productId": "3",
+      "productName": "Computer Mouse - Premium Ultra",
+      "amount": 118.5,
+      "agentId": "TASK-94723",
+      "balanceAfter": 11200.0,
+      "timestamp": "2026-07-12 08:27:21",
+      "status": "SUCCESS"
+    }
+  ]
+}
