@@ -119,6 +119,26 @@
       "balanceAfter": 11200.0,
       "timestamp": "2026-07-12 08:27:21",
       "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-2961",
+      "productId": "3",
+      "productName": "Computer Mouse - Premium Ultra",
+      "amount": 118.5,
+      "agentId": "TASK-51929",
+      "balanceAfter": 11300.0,
+      "timestamp": "2026-07-12 08:33:06",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-6440",
+      "productId": "3",
+      "productName": "Computer Mouse - Premium Ultra",
+      "amount": 118.5,
+      "agentId": "TASK-79678",
+      "balanceAfter": 11400.0,
+      "timestamp": "2026-07-12 08:36:12",
+      "status": "SUCCESS"
     }
   ]
 }

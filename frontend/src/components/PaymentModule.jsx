@@ -11,6 +11,9 @@ const COLORS = {
 export default function PaymentModule({ session, onComplete }) {
   const [logs, setLogs] = useState([]);
   const [status, setStatus] = useState('initializing'); // initializing, processing, success, error
+  const [authRequired, setAuthRequired] = useState(false);
+  const [password, setPassword] = useState('');
+  const authResolveRef = React.useRef(null);
 
   useEffect(() => {
     let isMounted = true;
@@ -30,6 +33,21 @@ export default function PaymentModule({ session, onComplete }) {
         
         addLog(`> TARGET: ${productName}`, COLORS.blue);
         addLog(`> AMOUNT: $${amount.toFixed(2)}`, COLORS.blue);
+        
+        await new Promise(r => setTimeout(r, 1500));
+        addLog('SECURITY CLEARANCE REQUIRED. AWAITING PIN...', COLORS.error);
+        
+        setAuthRequired(true);
+        const submittedPin = await new Promise(r => { authResolveRef.current = r; });
+        setAuthRequired(false);
+        
+        if (submittedPin !== '1234') {
+          addLog('[FATAL] INVALID PIN. TRANSACTION ABORTED.', COLORS.error);
+          if (isMounted) setStatus('error');
+          return;
+        }
+        
+        addLog('[OK] SECURITY CLEARANCE GRANTED.', COLORS.green);
         
         await new Promise(r => setTimeout(r, 1500));
         addLog('Connecting to payment gateway (localhost:5000)...');
@@ -108,8 +126,42 @@ export default function PaymentModule({ session, onComplete }) {
             {log.text}
           </div>
         ))}
-        {status === 'initializing' && (
+        {status === 'initializing' && !authRequired && (
           <div style={{ animation: 'pulse 1s infinite' }}>_</div>
+        )}
+        {authRequired && (
+          <form onSubmit={(e) => {
+            e.preventDefault();
+            if (password) {
+              if (authResolveRef.current) authResolveRef.current(password);
+            }
+          }} style={{ display: 'flex', gap: '10px', marginTop: '10px', alignItems: 'center' }}>
+            <span style={{ color: COLORS.error }}>PIN (1234):</span>
+            <input 
+              type="password" 
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              autoFocus
+              style={{
+                backgroundColor: COLORS.bg,
+                border: `1px solid ${COLORS.error}`,
+                color: COLORS.error,
+                fontFamily: "'JetBrains Mono', 'Share Tech Mono', monospace",
+                outline: 'none',
+                padding: '2px 5px',
+                width: '150px'
+              }}
+            />
+            <button type="submit" style={{
+              backgroundColor: COLORS.error,
+              color: COLORS.bg,
+              border: 'none',
+              fontFamily: "'JetBrains Mono', 'Share Tech Mono', monospace",
+              cursor: 'pointer',
+              fontWeight: 'bold',
+              padding: '2px 10px'
+            }}>AUTHORIZE</button>
+          </form>
         )}
         {status === 'error' && (
           <div style={{ color: COLORS.error, marginTop: '20px', cursor: 'pointer', textDecoration: 'underline' }} onClick={() => window.location.reload()}>
