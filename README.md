@@ -289,11 +289,11 @@ The goal: **don't build a fake operating system — build the illusion of one.**
 RiftMart was built as a hackathon project across four independent modules:
 
 | Module | Owner | Responsibilities |
-|--------|-------|-------------------|
-| 🖥️ AgentOS Terminal | *(frontend experience)* | Boot sequence, ASCII logo, terminal, AI conversation, receipt |
-| 🛒 Shop.exe | **Shashwat** | Product catalog, search, checkout, agent automation |
-| 💰 AI-Pay Protocol | **Akshata** | Payment API, rule engine, mock transactions |
-| 🔧 Integration & Docs | **Avnish** | Deployment, testing, documentation, polish |
+|--------|-------|------------------|
+| 🖥️ RiftOS Terminal | **[Mobashshir](https://github.com/Mobasheera)** | React frontend, `App.jsx`, `Terminal.jsx`, `Conversation.jsx`, boot sequence, ASCII logo, animations, Y2K theme & styling |
+| 🛒 Shop.exe | **[Shashwat](https://github.com/shashwat230710)** | Product catalog, search, checkout flow, shopping agent automation, Vercel deployment |
+| 💰 AI-Pay Protocol | **[Akshata](https://github.com/akshatabasankar)** | *(Initial Implementation)* of Payment API, payment rules, mock transactions |
+| 🔧 Integration & Infrastructure | **[Avnish](https://github.com/calsify)** & **[Shashwat](https://github.com/shashwat230710)** | Module integration, LLM integration, backend improvements, infrastructure, testing, documentation, polish |
 
 ---
 
