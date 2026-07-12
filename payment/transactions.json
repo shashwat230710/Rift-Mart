@@ -139,6 +139,26 @@
       "balanceAfter": 11400.0,
       "timestamp": "2026-07-12 08:36:12",
       "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-8226",
+      "productId": "5",
+      "productName": "Retro Mechanical Keyboard",
+      "amount": 150.0,
+      "agentId": "TASK-88407",
+      "balanceAfter": 11500.0,
+      "timestamp": "2026-07-12 08:54:15",
+      "status": "SUCCESS"
+    },
+    {
+      "transactionId": "RIFT-20260712-8586",
+      "productId": "3",
+      "productName": "Computer Mouse - Premium Ultra",
+      "amount": 118.5,
+      "agentId": "TASK-48811",
+      "balanceAfter": 11600.0,
+      "timestamp": "2026-07-12 09:08:53",
+      "status": "SUCCESS"
     }
   ]
 }
