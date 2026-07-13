@@ -15,7 +15,7 @@
 
 **RiftMart** is an AI-native e-commerce experience built for autonomous agents, not human shoppers -
 wrapped in a retro Y2K / Windows-XP-era terminal that makes the AI's shopping mission feel like
-you're hacking into a futuristic OS.
+you're hacking into a futuristic OSs.
 
 [![Live Demo](https://img.shields.io/badge/demo-rift--mart.vercel.app-33ff66?style=for-the-badge&logo=vercel&logoColor=white)](https://rift-mart.vercel.app)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](./LICENSE)
